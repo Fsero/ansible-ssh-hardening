@@ -10,8 +10,6 @@
         force: yes
       when: ansible_distribution == 'Ubuntu' and ansible_distribution_version == '14.04'
       changed_when: false
-
-  tasks:
     - name: install ssh
       yum: name=openssh state=installed
 
